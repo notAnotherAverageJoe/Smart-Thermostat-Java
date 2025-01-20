@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Thermostat {
     private String homeName;
     private int currentTemp;
@@ -14,6 +16,16 @@ public class Thermostat {
         System.out.println("Current Temp: " + currentTemp);
         System.out.println("Target Temp: " + targetTemp);
         System.out.println("\n\n");
+    }
+
+    public void editName() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Current home name: " + homeName);
+        System.out.println("Please enter the new name: ");
+        String newName = scanner.nextLine();
+        setHomeName(newName);
+        System.out.println("Home name has been updated to: " + homeName);
+        scanner.close();
     }
 
     public void setCurrentTemp(int newTemp) {

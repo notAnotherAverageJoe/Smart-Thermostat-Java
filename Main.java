@@ -40,7 +40,19 @@ public class Main {
                 case 1:
                     System.out.println("Edit settings selected\n");
                     mainThermostat.status();
-                    break;
+                    while (true) {
+
+                        System.out.println("Settings: ");
+                        System.out.println("1. Edit name");
+                        System.out.println("2. Edit target temperature");
+                        System.out.println("3. Return to main menu");
+                        choice = scanner.nextInt();
+                        switch (choice) {
+
+                        }
+
+                    }
+
                 case 2:
                     System.out.println("Cooling selected\n");
                     coolingElement.startCooling();
@@ -52,7 +64,9 @@ public class Main {
                 case 4:
                     System.out.println("Exiting program...");
                     scanner.close();
+                    hasPower = false;
                     return;
+
                 default:
                     System.out.println("Invalid choice, please try again.");
 
