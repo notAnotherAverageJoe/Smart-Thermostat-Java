@@ -18,9 +18,8 @@ public class Main {
 
         // Create a Cooling object with the user-provided temperatures
         Cooling coolingElement = new Cooling(mainThermostat);
+        Heating heatingElement = new Heating(mainThermostat);
 
-        // Start the cooling process
-        // coolingElement.startCooling();
         boolean hasPower = true;
 
         mainThermostat.status();
@@ -39,15 +38,16 @@ public class Main {
             System.out.println("\n\n");
             switch (choice) {
                 case 1:
-                    System.out.println("Edit settings selected");
+                    System.out.println("Edit settings selected\n");
                     mainThermostat.status();
                     break;
                 case 2:
-                    System.out.println("Cooling selected");
+                    System.out.println("Cooling selected\n");
                     coolingElement.startCooling();
                     break;
                 case 3:
-                    System.out.println("option 3");
+                    System.out.println("Heating Selected");
+                    heatingElement.startHeating();
                     break;
                 case 4:
                     System.out.println("Exiting program...");
