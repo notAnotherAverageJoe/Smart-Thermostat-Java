@@ -26,8 +26,9 @@ public class Main {
         int choice;
 
         while (hasPower) {
+
             System.out.println("------------------------------------");
-            System.out.println("  |    Current Temp: " + currentTemp);
+            System.out.println("|    Current Temp: " + mainThermostat.getCurrentTemp());
             System.out.println("------------------------------------");
 
             System.out.println("Menu:");
