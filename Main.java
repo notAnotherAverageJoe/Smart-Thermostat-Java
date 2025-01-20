@@ -26,6 +26,10 @@ public class Main {
         int choice;
 
         while (hasPower) {
+            System.out.println("------------------------------------");
+            System.out.println("  |    Current Temp: " + currentTemp);
+            System.out.println("------------------------------------");
+
             System.out.println("Menu:");
             System.out.println("1. Edit Settings");
             System.out.println("2. Cooling");
@@ -48,10 +52,24 @@ public class Main {
                         System.out.println("3. Return to main menu");
                         choice = scanner.nextInt();
                         switch (choice) {
+                            case 1:
+                                System.out.println("Edit name selected");
+                                mainThermostat.editName();
+                                break;
+                            case 2:
+                                System.out.println("Edit target temperature: ");
+                                break;
+                            case 3:
+                                System.out.println("Back to main menu");
+                                break;
+                            default:
+                                System.out.println("Invalid choice, please try again.");
 
                         }
+                        break;
 
                     }
+                    break;
 
                 case 2:
                     System.out.println("Cooling selected\n");

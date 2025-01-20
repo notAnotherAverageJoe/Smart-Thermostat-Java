@@ -19,13 +19,13 @@ public class Thermostat {
     }
 
     public void editName() {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.println("Current home name: " + homeName);
         System.out.println("Please enter the new name: ");
         String newName = scanner.nextLine();
         setHomeName(newName);
         System.out.println("Home name has been updated to: " + homeName);
-        scanner.close();
     }
 
     public void setCurrentTemp(int newTemp) {
