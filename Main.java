@@ -30,7 +30,7 @@ public class Main {
             System.out.println("Menu:");
             System.out.println("1. Edit Settings");
             System.out.println("2. Cooling");
-            System.out.println("3. Option 3");
+            System.out.println("3. Heating");
             System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
 

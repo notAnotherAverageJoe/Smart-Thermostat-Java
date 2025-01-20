@@ -28,7 +28,11 @@ public class Heating {
                     System.out.println("Heating interrupted!");
                 }
             }
+            isHeating = false;
+            System.out.println("Target temp reached, heating shutting off\n");
 
+        } else {
+            System.out.println("Temperature is withing target temp, no heating needed\n");
         }
 
     }
